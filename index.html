@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>图片</title>
-    <!-- 关键：手机自适应 -->
+    <!-- 手机自适应 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
@@ -12,22 +12,19 @@
             box-sizing: border-box;
         }
         body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background: #f5f5f5;
-            padding: 10px;
+            padding: 0; /* 不留边距 */
         }
         img {
-            max-width: 100%;   /* 不超出屏幕 */
-            height: auto;       /* 比例不变形 */
+            max-width: 100%;
+            height: auto;
             display: block;
-            border-radius: 4px; /* 可选：轻微圆角 */
+            width: 100%; /* 图片铺满宽度 */
         }
     </style>
 </head>
 <body>
+    <!-- 图片直接置顶，没有任何居中 -->
     <img src="ambf.jpeg" alt="展示图片">
 </body>
 </html>
